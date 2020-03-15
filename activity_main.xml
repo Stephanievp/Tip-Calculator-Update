@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_columnSpan="2"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/textView_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/backgroundBillAmount"
+        android:hint="@string/textView_billAmountHint"
+        android:labelFor="@+id/editText_BillAmount"
+        android:padding="@dimen/padding_textView_default"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="" />
+
+    <EditText
+        android:id="@+id/editText_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:background="@color/backgroundBillAmount"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="@dimen/padding_textView_default"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_TipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="@string/textView_percentage"
+        android:textAlignment="center" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="@dimen/text_dimen"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="2"
+        android:layout_column="1" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="@string/textView_tip"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tip_Amount"
+        android:layout_width="@dimen/text_dimen"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:background="@color/tip_total"
+        android:padding="@dimen/padding_textView_default" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="@string/textView_total"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/total_Amount"
+        android:layout_width="@dimen/text_dimen"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:background="@color/tip_total"
+        android:padding="@dimen/padding_textView_default" />
+
+    <TextView
+        android:id="@+id/split_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="@string/split_bill" />
+
+    <Spinner
+        android:id="@+id/people_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="5"
+        android:layout_column="1"/>
+
+    <TextView
+        android:id="@+id/per_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:text="@string/amount_per_person" />
+
+    <TextView
+        android:id="@+id/amount_per_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="6"
+        android:layout_column="1" />
+
+    <TextView
+        android:id="@+id/rounding_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="@string/rounding_options" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_regular"
+        android:layout_marginTop="@dimen/padding_regular"
+        android:layout_marginEnd="@dimen/padding_regular"
+        android:layout_marginBottom="@dimen/padding_regular"
+        android:layout_row="7"
+        android:layout_column="1" >
+
+        <RadioButton
+            android:id="@+id/no_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_rounding"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/tip_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/round_the_tip"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/total_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/round_the_total"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+</GridLayout>
