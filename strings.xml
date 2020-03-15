@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Tip Calculator Update</string>
+    <string name="textView_billAmountHint"></string>
+    <string name="textView_percentage">Percentage</string>
+    <string name="textView_tip">Tip</string>
+    <string name="textView_total">Total</string>
+
+    <string name="amount_per_person">Amount Per Person</string>
+    <string name="split_bill">Split bill</string>
+    <string name="rounding_options">Rounding Options</string>
+
+    <!-- Radio Buttons -->
+    <string name="no_rounding">No rounding</string>
+    <string name="round_the_tip">Round the tip</string>
+    <string name="round_the_total">Round the total</string>
+
+    <!-- Action buttons -->
+    <string name="action_share">Share</string>
+    <string name="action_info">Info</string>
+
+    <!-- Spinner for amount of people -->
+    <string-array name="labels_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>
